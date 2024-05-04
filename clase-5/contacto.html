@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <h1>contacto</h1>
+    <form>
+        <fieldset>
+            <legend>Formulario de contacto</legend>
+            <div>
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="Nombre" id="Nombre" required maxlength="15" minlength="3" required>
+            </div>
+            <div>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="Apellido" id="Apellido" required>
+            </div>
+            <div>
+                <label for="correo">Correo electronico</label>
+                <input type="email" name="correo" id="correo" required>
+            </div>
+            <div>
+                <label for="Numero">Numero</label>
+                <input type="tel" name="Numero" id="Numero">
+            </div>
+            <div>
+                <label for="clave">Contraseña</label>
+                <input type="password" name="clave" id="clave">
+            </div>
+            <div>
+                <label for="fecha_nacimiento"></label>
+                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+            </div>
+            <div>
+                <label for="Tiempo">Tiempo</label>
+                <input type="time" name="Tiempo" id="Tiempo">
+            </div>
+            <div>
+                <label for="partida_nacimiento">Partida de nacimiento</label>
+                <input type="file" name="partida_nacimiento" id="partida_nacimiento" required>
+            </div>
+            <div>
+                <label for="talle">Talle</label>
+                <select name="talle" id="talle">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="No_seleccionado">No seleccionado</option>
+                </select>
+            </div>
+            <h3>Pais de residencia</h3>
+            <div>
+                <label for="Pais_AR">Argentina</label>
+                <input type="radio" name="Pais_AR" id="Pais_AR">
+            </div>
+            <div>
+                <label for="Pais_FR">Francia</label>
+                <input type="radio" name="Pais_FR" id="Pais_FR">
+            </div>
+            <div>
+                <label for="Pais_BR">Brasil</label>
+                <input type="radio" name="Pais_BR" id="Pais_BR">
+            </div>
+            <div>
+                <input type="checkbox" name="Acepta" value="1"> acepta terminos y condiciones
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" name="cbox1" value="checkbox1"> Este es mi primer checkbox
+            </div>
+            <div>
+                <input type="checkbox" name="cbox2" id="checkbox2"> Este es mi segundo checkbox
+            </div>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="3" placeholder="Abc"></textarea>
+            <br>
+            <input type="submit" value="Enviar Formulario">
+        </fieldset>
+    </form>
+</body>
+</html>
